@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Language-Model-Assisted Bi-Level Programming for Reward Learning from Internet Videos</title>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-PYVRSFMDRL');
+  </script>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="icon" href="./static/images/favicon.svg">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+<body>
+
+<!-- Hero Section -->
+<section class="hero is-primary is-bold">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">Language-Model-Assisted Bi-Level Programming for Reward Learning from Internet Videos</h1>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a href="https://harshmahesheka.github.io/" style="color: #1A237E !important;">Harsh Mahesheka</a><sup>1</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://zhi-xian-xie.github.io/" style="color: #1A237E !important;">Zhixian Xie</a><sup>2</sup>,
+            </span>
+            <span class="author-block" >
+              <a href="https://zhaoranwang.github.io/" style="color:#1A237E !important;">Zhaoran Wang</a><sup>3</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://wanxinjin.github.io/" style="color:#1A237E !important;">Wanxin Jin</a><sup>2</sup>,
+            </span>
+          </div>
+          
+          <div class="is-size-5 publication-authors">
+            <span class="author-block"><sup>1</sup>Indian Institute of Technology (BHU) Varanasi</span>
+            <span class="author-block"><sup>2</sup>Arizona State University</span>
+            <span class="author-block"><sup>3</sup>Northwestern University</span>
+          </div>
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+                <span class="link-block">
+                <a href="https://arxiv.org/abs/2410.09286"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+              <!-- Video Link. -->
+              <span class="link-block">
+                <a href="https://www.youtube.com/watch?v=CzlyYLu4mLQ"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-youtube"></i>
+                  </span>
+                  <span>Video</span>
+                </a>
+              </span>
+              <!-- Code Link. -->
+              <span class="link-block">
+                <a href=""
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code (coming soon)</span>
+                  </a>
+              </span>              
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Teaser Section -->
+ <br>
+ <br>
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <video id="teaser" autoplay muted loop playsinline height="100%">
+        <source src="./static/videos/main_video.mp4"
+                type="video/mp4">
+      </video>
+      <h2 class="subtitle has-text-centered">
+        Our framework enables a reinforcement learning agent to directly learn its reward from internet videos, bypassing dedicated data preparation.
+      </h2>
+    </div>
+  </div>
+</section>
+
+<!-- Abstract Section -->
+<section class="section has-background-light">
+  <div class="container is-max-desktop">
+    <!-- Abstract -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            Learning from Demonstrations, particularly from biological experts like humans and animals, 
+            often encounters significant data acquisition challenges. While recent approaches leverage 
+            internet videos for learning, they require complex, task-specific pipelines to extract and 
+            retarget motion data for the agent. In this work, we introduce a language-model-assisted bi-level 
+            programming framework that enables a reinforcement learning agent to directly learn its reward 
+            from internet videos, bypassing dedicated data preparation. The framework includes two levels: 
+            an upper level where a vision-language model (VLM) provides feedback by comparing the learner's 
+            behavior with expert videos, and a lower level where a large language model (LLM) translates this
+            feedback into reward updates. The VLM and LLM collaborate within this bi-level framework, using a
+            "chain rule" approach to derive a valid search direction for reward learning. We validate the method 
+            for reward learning from YouTube videos, and the results have shown that the proposed method enables 
+            efficient reward design from expert videos of biological agents for complex behavior synthesis.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--/ Abstract -->
+  </div>
+</section>
+
+<!-- Approach Section -->
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="content has-text-justified">
+        <h2 class="title is-3 has-text-centered">Approach</h2>
+        <br>
+        <figure>
+          <img src="./static/images/V2RF.jpg" alt="Description of the image" style="max-width: 90%; height: auto;">
+          <figcaption class="has-text-centered"></figcaption>
+        </figure>
+        <br>
+        <p>
+          Our bi-level framework leverages a combination of a Visual Language Model (VLM) and a Large Language Model (LLM) 
+          to enable robots to learn behaviors from expert demonstration videos. At the upper level, the VLM (Gemini-1.5 Pro)
+          compares a biological demonstration video with a robot's behavior video, generating "Visual Feedback" (∂L → ∂ξ(πR))
+          that suggests how the robot should adjust its actions to better replicate the expert’s motions. This visual feedback
+          is then passed to the lower-level LLM (GPT-4o), which translates it into "Reward Feedback" (∂ξ(πR) → ∂R), directly
+          modifying the robot’s reward function encoded as Python code. Using contextual information from the robot’s
+          environment code, the LLM adapts the reward code to reinforce behaviors aligned with the VLM's guidance. 
+          The updated reward code is subsequently integrated into a reinforcement learning (RL) loop within the Isaac Gym 
+          environment, where the robot’s policy is refined based on the enhanced reward structure. This framework effectively 
+          combines visual and textual feedback to create a robust and adaptive reward learning system that continuously improves
+          the robot’s performance to closely match the expert demonstrations.
+        </p>
+        <br>
+        <figure>
+          <img src="./static/images/reward_update.jpg" alt="Description of the image" style="max-width: 90%; height: auto;">
+          <figcaption class="has-text-centered">The image demonstrates how the low-level LLM translates language-based instructions from 
+            the VLM into specific updates in the reward code, guided by the environment code for context. The changes include adding new 
+            components for high jump rewards, adjusting thresholds, and removing unnecessary penalties etc.
+          </figcaption>
+        </figure>
+        <br>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Experiments Section -->
+<section class="section has-background-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="content has-text-justified">
+        <h2 class="title is-3 has-text-centered">Experiments</h2>
+        <p>
+          We evaluate our approach on three robots—Ant, Humanoid, and ANYmal—in Isaac Gym environ-
+          ments, learning rewards from video demonstrations of their biological counterparts: spider,
+          human athlete, and dog. The biological motion videos, obtained directly from YouTube, are used to
+          train the robots for various skillful motion tasks, including Spider Walking, Spider Jumping, Human
+          Running, Human Split Landing, Dog Hopping. 
+        </p>
+        <br>
+        <div class="columns is-centered">
+          <div class="column">
+            <figure>
+              <img src="./static/images/results1.png" alt="Description of the image" style="max-width: 100%; height: auto;">
+              <figcaption class="has-text-centered">Our approach consistently outperforms Eureka and produces results similar to Human
+                as VLM, showcasing the ability of VLM to guide reward search. 
+              </figcaption>
+            </figure>
+          </div>
+          <div class="column">
+            <figure>
+              <img src="./static/images/results3.png" alt="Description of the image" style="max-width: 100%; height: auto;">
+              <figcaption class="has-text-centered">Human preferences further verify our claims that we can mimic complex traits from
+                biological videos at par with an Human Expert.
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+        <br>
+        <figure>
+          <img src="./static/images/seq1.png" alt="Description of the image" style="width: 150%; height: auto;">
+          <figcaption class="has-text-centered"></figcaption>
+        </figure>
+        <figure>
+          <img src="./static/images/seq2.png" alt="Description of the image" style="width: 150%; height: auto;">
+          <figcaption class="has-text-centered">A side-by-side comparison of motions demonstrates our model's capability to capture the intricate
+             details of biological movement.
+          </figcaption>
+        </figure>
+        <br>
+        <div class="columns is-left">
+          <div class="column is-half">
+            <figure class="image is-half" style="width: 75%; height: auto;">
+              <img src="./static/images/results2.png" alt="Description of the image">
+            </figure>
+          </div>
+          <div class="column is-half">
+            <h2 class="title is-4">Ablation Study</h2>
+            <p>To demonstrate the benefits of our bi-level design, we conduct an ablation study comparing 
+              the proposed VLM-LLM bi-level method with a single-level VLM that directly processes expert 
+              videos to generate reward updates. We run five experiments for the Spider Walking and Human 
+              Running tasks and the findings clearly highlight the superiority 
+              of the VLM-LLM bi-level design, which can be attributed to its hierarchical structure. This architecture
+              allows the VLM to focus on high-level planning and reward structure design, while the LLM specializes
+              in environment-specific code generation and refinement.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BibTeX Section -->
+<section class="section">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>@misc{mahesheka2024languagemodelassistedbilevelprogrammingreward,
+  title={Language-Model-Assisted Bi-Level Programming for Reward Learning from Internet Videos}, 
+  author={Harsh Mahesheka and Zhixian Xie and Zhaoran Wang and Wanxin Jin},
+  year={2024},
+  eprint={2410.09286},
+  archivePrefix={arXiv},
+  primaryClass={cs.RO},
+  url={https://arxiv.org/abs/2410.09286}, 
+}</code></pre>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="container">
+    <div class="content has-text-centered">
+      <a class="icon-link"
+         href="https://arxiv.org/abs/2410.09286">
+        <i class="fas fa-file-pdf"></i>
+      </a>
+      <a class="icon-link" href="https://github.com/harshmahesheka" class="external-link" disabled>
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p>
+            This website is licensed under a <a rel="license"
+                                                href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+          <p>
+            This website code is borrowed from <a
+              href="https://github.com/nerfies/nerfies.github.io">here</a>. 
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
